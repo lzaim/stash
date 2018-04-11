@@ -41,6 +41,10 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
+@media (min-width: 320px) {
+  .container {
+    width: 310px;
+  }
 @media (min-width: 768px) {
   .container {
     width: 750px;
