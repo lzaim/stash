@@ -26,12 +26,12 @@ p {
   padding-right: 15px;
   position: relative;
 }
-.container: before
-.container: after {
+.container:before
+.container:after {
   content: " ";
   display: table;
 }
-.container: after {
+.container:after {
   clear: both;
 }
 .one-half, .one-third, .one-fourth {
@@ -47,13 +47,16 @@ header {
   color: #FFFFFF;
   background-image: linear-gradient(-206deg, #2C8994 0%, #0E4147 100%);
 }
+header.site-logo {
+  display: center;
+}
 header nav {
   padding: 1em 0;
 }
 header nav ul {
   display: inline;
   text-align: right;
-  float: right;
+  /*float: left;*/
   margin: 0;
 }
 header nav ul > li {
@@ -276,6 +279,10 @@ header .hero img {
   .container {
     width: 310px;
   }
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -293,9 +300,12 @@ header .hero img {
   header .hero img {
     display: block;
     margin:3em auto 0;
+    width: 100%;
+    height: auto;
   }
   header nav ul {
     display: inline;
+    float: right;
     text-align: center;
     margin: 0;
   }
@@ -312,6 +322,14 @@ header .hero img {
   }
   .one-fourth {
     width: 21%;
+  }
+  header .hero img {
+    width: auto;
+    height: auto;
+  }
+  header nav ul {
+    display: inline;
+    float: right;
   }
 }
 @media (min-width: 1200px) {
