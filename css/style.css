@@ -26,7 +26,7 @@ p {
   padding-right: 15px;
   position: relative;
 }
-.container:before
+.container:before,
 .container:after {
   content: " ";
   display: table;
@@ -114,14 +114,14 @@ header .hero img {
 }
 
 /* Benefits */
-.benefits .container {
-  margin: 5000px, 5000px, 5000px, 5000px;
-}
 
 .benefits {
   text-align: center;
   display: block;
   position: relative;
+}
+.benefits .container {
+  margin: 50, 50, 50, 50
 }
 .benefits ul {
   margin: 0 auto;
@@ -292,7 +292,7 @@ header .hero img {
   header .hero h1 {
     font-size: 38px;
     font-weight: normal;
-    margin: 125px 0 15px 0;
+    margin: 10px 0 20px 0;
   }
   header .hero p {
     font-size: 18px;
@@ -316,8 +316,6 @@ header .hero img {
   }
   header .hero h1 {
     font-size: 48px;
-    font-weight: normal;
-    margin: 95px 0 0;
   }
   header .hero p {
     font-size: 22px;
