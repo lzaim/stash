@@ -270,6 +270,59 @@ header .hero img {
   margin-top: 30px;
 }
 
+
+/*Footer*/
+ footer {
+   background-color: #22303E;
+   background-image: linear-gradient(to top,
+      #22303E 0%, #22303E 50%, #0E4147 50%, #0E4147 100%);
+   color: #FFFFFF;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+ }
+ footer p, footer nav ul {
+   font-size:14px;
+   font-weight:100;
+   text-align: center;
+   margin: 10px auto 0;
+ }
+ footer nav ul li {
+   list-style-type: none;
+   display: inline;
+ }
+ footer nav ul li a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ footer .right-footer-block {
+   background-color: #22303E;
+ }
+ footer .site-logo img {
+   padding: 2.35em 0;
+   margin: 0 auto;
+   display: block;
+   height: 50px;
+}
+/*Second Call to Action*/
+.Calltoaction h2 {
+  text-align: center;
+}
+.Calltoaction p {
+  text-align: center;
+}
+.Calltoaction {
+  display: block;
+  position: relative;
+  margin: 10px auto;
+  padding: 10px;
+}
+.Calltoaction a.btn {
+  position: relative;
+  margin: auto;
+}
+/*Media Queries*/
 @media (min-width: 360px) {
   .container {
     width: 310px;
@@ -282,15 +335,15 @@ header .hero img {
   header .hero h1 {
     font-size: 38px;
     font-weight: normal;
-    margin: 10px 0 20px 0;
+    margin: 20px 0 20px 0;
   }
   header .hero p {
     font-size: 18px;
     line-height: 22px;
     font-weight: 100;
-    margin: 10px 0 40px;
+    margin: 10px 0 20px;
   }
-}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -332,8 +385,8 @@ header .hero img {
   }
   .stagger {
     margin-top: 20px;
-  }
 }
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -355,6 +408,22 @@ header .hero img {
     display: inline;
     float: right;
   }
+  footer{
+     background-color: #22303E;
+     background-image: linear-gradient(to left,
+        #22303E 0%, #22303E 33.33337%, #0E4147 33.33337%, #0E4147 100%);
+     height: 100px;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: center;
+   }
+   footer .right-footer-block {
+     background-color: #22303E;
+   }
+   footer .logo{
+     padding: 2em 0 2em 1.5em;
+   }
 }
 @media (min-width: 1200px) {
   .container {
