@@ -241,16 +241,6 @@ header .hero img {
    width:auto;
    margin:0;
  }
- .testimonials blockquote2 {
-   color:#FFFFFF;
-   text-align: left;
-   font-style: italic;
-   background:#0E4147;
-   position: relative;
-   padding:30px;
-   width:auto;
-   margin:0;
- }
  .testimonials blockquote:after {
    top: 100%;
    left: 13%;
@@ -339,6 +329,9 @@ header .hero img {
     float: right;
     text-align: center;
     margin: 0;
+  }
+  .stagger {
+    margin-top: 20px;
   }
 }
 @media (min-width: 992px) {
