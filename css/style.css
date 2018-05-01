@@ -99,6 +99,7 @@ header .hero p {
 header .hero img {
   width: 100%;
   height: auto;
+  padding-bottom: 3em;
 }
 
 /* BUTTONS */
@@ -125,7 +126,8 @@ header .hero img {
 }
 .benefits ul {
   margin: 0 auto;
-  padding: 4em 0;
+  padding-top: 3em;
+  padding-bottom: 2em;
 }
 .benefits ul li {
   list-style-type: none;
@@ -147,7 +149,7 @@ header .hero img {
   background: url("../image/pricing_background.png") top center no-repeat, linear-gradient (-206deg, #2C8994 0%, #0E4147 100%);
   background-size:cover;
   text-align: center;
-  padding:4em 0;
+  padding:2em 0;
 }
 .pricing h2, .pricing p {
   color:#FFFFFF;
@@ -222,7 +224,9 @@ header .hero img {
 }
 /* TESTIMONIALS */
  .testimonials {
-   padding:4em 0;
+   padding-top: 2em;
+   padding-right: 0;
+   padding-left: 0;
    text-align: center;
  }
  .testimonials h2 {
@@ -270,23 +274,37 @@ header .hero img {
   margin-top: 30px;
 }
 
+/*Second Call to Action*/
+.Calltoaction h2 {
+  text-align: center;
+}
+.Calltoaction p {
+  text-align: center;
+  padding-bottom: 2em;
+}
+.Calltoaction {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-bottom: 3em;
+}
 
 /*Footer*/
  footer {
-   background-color: #22303E;
    background-image: linear-gradient(to top,
-      #22303E 0%, #22303E 50%, #0E4147 50%, #0E4147 100%);
+      #22303E 0%, #22303E 35%, #0E4147 35%, #0E4147 100%);
    color: #FFFFFF;
-   height: 150px;
    position: relative;
    overflow: hidden;
    z-index: 0;
+ }
+ footer p {
+   margin-bottom: 0;
  }
  footer p, footer nav ul {
    font-size:14px;
    font-weight:100;
    text-align: center;
-   margin: 10px auto 0;
  }
  footer nav ul li {
    list-style-type: none;
@@ -296,33 +314,12 @@ header .hero img {
    color:#FFFFFF;
    text-decoration: none;
  }
- footer .right-footer-block {
-   background-color: #22303E;
- }
  footer .site-logo img {
-   padding: 2.35em 0;
-   margin: 0 auto;
    display: block;
-   height: 50px;
+   height: 30px;
 }
-/*Second Call to Action*/
-.Calltoaction h2 {
-  text-align: center;
-}
-.Calltoaction p {
-  text-align: center;
-}
-.Calltoaction {
-  display: block;
-  position: relative;
-  margin: 10px auto;
-  padding: 10px;
-}
-.Calltoaction a.btn {
-  position: relative;
-  margin: auto;
-}
-/*Media Queries*/
+
+/* Media Queries */
 @media (min-width: 360px) {
   .container {
     width: 310px;
@@ -338,12 +335,17 @@ header .hero img {
     margin: 20px 0 20px 0;
   }
   header .hero p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 100;
-    margin: 10px 0 20px;
+    margin: 10px 0 50px;
   }
-
+  footer .site-logo img {
+    margin: auto;
+  }
+  footer nav ul {
+    margin: 10px auto;
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -371,6 +373,7 @@ header .hero img {
     margin: 50px auto;
     width: 100%;
     height: auto;
+    padding-bottom: 2em;
   }
   header .site-logo img {
     display: inline;
@@ -385,7 +388,20 @@ header .hero img {
   }
   .stagger {
     margin-top: 20px;
-}
+  }
+  footer {
+    background-image: linear-gradient(to left,
+     #22303E 0%, #22303E 30%, #0E4147 30%, #0E4147 100%);
+  }
+  footer .site-logo img {
+    margin: 20px auto 0;
+  }
+  footer nav ul {
+     margin: 20px auto 0;
+  }
+  footer p {
+    margin-top: 20px;
+  }
 
 @media (min-width: 992px) {
   .container {
@@ -408,23 +424,7 @@ header .hero img {
     display: inline;
     float: right;
   }
-  footer{
-     background-color: #22303E;
-     background-image: linear-gradient(to left,
-        #22303E 0%, #22303E 33.33337%, #0E4147 33.33337%, #0E4147 100%);
-     height: 100px;
-   }
-   footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: center;
-   }
-   footer .right-footer-block {
-     background-color: #22303E;
-   }
-   footer .logo{
-     padding: 2em 0 2em 1.5em;
-   }
-}
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
