@@ -15,6 +15,9 @@
     float: right;
     display: inline-block;
 }
+ul.settingsmenu .dropit {
+  margin: 5px 0 0;
+}
 ul.menu.dropit .dropit-trigger { position: relative; }
 ul.menu.dropit .dropit-submenu {
     position: absolute;
@@ -38,7 +41,7 @@ ul.settingsmenu.dropit .dropit-submenu {
     min-width: 100px;
     list-style: none;
 	  padding: 20px;
-	  margin: 20px 0 ;
+	  margin: 0 ;
 }
 
 .dropit .dropit-open .dropit-submenu {
@@ -47,16 +50,29 @@ ul.settingsmenu.dropit .dropit-submenu {
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
     border-radius: 4px;
 }
-.dropit .dropit-open .dropit-submenu:after {
+ul.menu.dropit .dropit-open .dropit-submenu:after {
  content: " ";
  position: absolute;
  border-style: solid;
- border-width: 0 8px 8px;
+ border-width: 0px 8px 8px 8px;
  border-color: #FFFFFF transparent;
  display: block;
  width: 0;
  z-index: 1;
  top: -8px;
+ right: 10px;
+}
+
+ul.settingsmenu.dropit .dropit-open .dropit-submenu:after {
+ content: " ";
+ position: absolute;
+ border-style: solid;
+ border-width: 8px 8px 0px 8px;
+ border-color: #FFFFFF transparent;
+ display: block;
+ width: 0;
+ z-index: 1;
+ bottom: -8px;
  right: 10px;
 }
 
@@ -73,6 +89,3 @@ ul.settingsmenu.dropit .dropit-submenu {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight:100;
  }
-.settingsmenu {
-
-}

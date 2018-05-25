@@ -455,10 +455,9 @@ header .hero img {
  .left-nav .settings a {
    color:#FFFFFF;
    text-decoration: none;
-   text-align: right;
-   float: right;
+   text-align: left;
+   float: left;
    margin-right:10px;
-   margin-top:8px;
  }
  /* CONTENT */
 .content {
